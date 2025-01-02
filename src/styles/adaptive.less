@@ -1,0 +1,537 @@
+@media screen and (max-width: 1125px) {
+
+  .header-container {
+    padding: 32px 15px 28px;
+  }
+
+  .macaroons {
+    padding-top: 120px;
+
+    .macaroons-container {
+
+      .macaroons-title {
+        margin-bottom: 0;
+      }
+
+      .macaroons-products {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+
+        .product {
+          margin-top: 136px;
+        }
+      }
+    }
+  }
+
+  .order {
+    .order-container {
+      .strawberry-right {
+        right: 60px;
+      }
+
+      .order-form {
+        z-index: 1;
+      }
+    }
+  }
+
+  .footer-container {
+    padding: 75px 15px 66px 15px;
+  }
+
+  .present-sticky {
+    .present-fixed {
+      bottom: 25px;
+      right: 25px;
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  .up-block-present {
+    position: fixed;
+    bottom: -10px;
+    right: -15px;
+    z-index: 10;
+  }
+
+  .message {
+    top: -150px;
+  }
+}
+
+/*768 - 1024*/
+@media screen and (max-width: 1024px) {
+
+  .menu-list-links:nth-child(1) {
+    margin-left: 103px;
+  }
+
+  .phone {
+    display: none;
+  }
+
+  .main {
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 0;
+      padding-bottom: 0;
+
+      .main-info {
+        margin-top: 60px;
+        max-width: 580px;
+
+        .info-text {
+          padding: 74px 0 41px 0;
+        }
+      }
+
+      .main-image {
+        position: relative;
+        top: -90px;
+        right: -180px;
+      }
+    }
+  }
+
+  .description {
+    .description-container {
+      grid-template-areas:
+        "text"
+        "image"
+        "blocks";
+      justify-items: center;
+
+      .description-text {
+        h2 {
+          max-width: 475px;
+          margin: 0 auto;
+        }
+
+        p {
+          max-width: 672px;
+        }
+      }
+
+      .description-image {
+        padding-top: 32px;
+
+        img {
+          max-width: 302px;
+        }
+      }
+
+      .description-blocks {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px 55px;
+
+        .description-block {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .block-text {
+            text-align: center;
+          }
+        }
+
+        &:nth-child(3),
+        &:nth-child(4) {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+
+  .order-container {
+    grid-template-columns: 410px 1fr;
+
+    .strawberry-left {
+      top: 200px;
+      left: 355px;
+    }
+
+    .strawberry-right {
+      top: 100px;
+      right: 130px;
+    }
+
+    .order-image {
+      order: 2;
+      margin-right: 0;
+
+      img {
+        max-width: 352px;
+        margin-bottom: -100px;
+        margin-left: -50px;
+      }
+    }
+
+    .order-form {
+      order: 1;
+    }
+  }
+
+  .present-sticky {
+    .present-fixed {
+      display: none;
+    }
+  }
+
+  .footer {
+    .footer-container {
+      .footer-phone {
+        display: block;
+      }
+    }
+  }
+
+  .message {
+    top: -50px;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  .header {
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+
+      .menu {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        top: 0;
+        left: 0;
+        background: #000000c9;
+
+        .menu-close {
+          display: block;
+          width: 24px;
+          height: 24px;
+          fill: rgb(164, 107, 0);
+          position: absolute;
+          top: 25px;
+          left: 25px;
+        }
+
+        &.open {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          flex-wrap: wrap;
+          justify-content: center;
+          z-index: 30;
+        }
+
+        .menu-list {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .menu-list-links {
+
+            &:nth-child(1) {
+              margin: 0;
+            }
+
+            .link {
+              font-size: 35px;
+              margin-bottom: 35px;
+              color: #dba1a1;
+            }
+          }
+
+        }
+      }
+
+      .header-burger {
+        display: block;
+
+        img {
+          width: 40px;
+          height: 22px;
+        }
+      }
+    }
+  }
+
+  .macaroons {
+    .macaroons-container {
+      .macaroons-products {
+        grid-template-columns: 1fr;
+        justify-items: center;
+      }
+    }
+  }
+
+  .order {
+    .order-container {
+      display: flex;
+      justify-content: center;
+
+      .strawberry-left {
+        top: 80px;
+        left: 230px;
+      }
+
+      .strawberry-right {
+        display: none;
+      }
+
+      .order-image {
+        display: none;
+      }
+
+      .order-form {
+        .form-title {
+          font-size: 30px;
+        }
+
+        .form-text {
+          max-width: 344px;
+          font-size: 16px;
+        }
+
+        .form-input {
+          width: 344px;
+        }
+
+        .form-btn {
+          width: 344px;
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+  .main {
+    padding-bottom: 60px;
+
+    .main-container {
+
+      .main-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .info-title {
+          font-size: 32px;
+          text-align: center;
+        }
+
+        .info-text {
+          font-size: 16px;
+          text-align: center;
+          padding: 40px 0;
+        }
+      }
+
+      .main-image {
+        position: relative;
+        top: 20px;
+        left: 150px;
+        max-width: 250px;
+
+        &::after {
+          width: 230px;
+          height: 230px;
+        }
+
+        &::before {
+          width: 230px;
+          height: 230px;
+        }
+
+        img {
+          max-width: 250px;
+        }
+      }
+    }
+  }
+
+  .description {
+    .description-container {
+      .description-text {
+        h2 {
+          font-size: 30px;
+          padding-bottom: 30px;
+        }
+      }
+
+      .description-blocks {
+        .description-block {
+          .block-text {
+            padding-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 510px) {
+
+  .main {
+    .main-container {
+      .main-image {
+        left: 120px;
+      }
+    }
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 0;
+
+    .footer-left {
+      .rights {
+        display: none;
+      }
+    }
+
+    .footer-center {
+      order: 2;
+    }
+
+    .footer-phone {
+      padding: 40px 0;
+    }
+
+    .rights2 {
+      display: block;
+      order: 3;
+      padding-top: 40px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .main {
+    .main-container {
+      .main-image {
+        left: 107px;
+      }
+    }
+  }
+
+  .description {
+    .description-container {
+      .description-blocks {
+        padding-top: 36px;
+        grid-gap: 0;
+
+        .description-block {
+          max-width: 180px;
+
+          .block-title {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+
+  .main-container {
+    padding: 0;
+
+    .main-image {
+      left: 50px;
+    }
+  }
+
+  .description {
+    padding: 100px 15px;
+
+    .description-container {
+
+      .description-text {
+        p {
+          font-size: 16px;
+        }
+      }
+
+      .description-blocks {
+
+        .description-block {
+          max-width: 165px;
+
+          .block-title {
+            font-size: 18px;
+          }
+
+          .block-text {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+
+  .macaroons {
+    .macaroons-container {
+      .macaroons-title {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .order {
+    padding-bottom: 77px;
+  }
+
+}
+
+@media screen and (max-width: 350px) {
+
+  .main {
+    .main-container {
+      .main-image {
+        left: 25px;
+      }
+    }
+  }
+
+  .description {
+    .description-container {
+      .description-blocks {
+        grid-template-columns: 1fr;
+      }
+
+    }
+  }
+
+  .order {
+    .order-container {
+      .strawberry-left {
+        left: 210px;
+      }
+
+      .order-form {
+        .form-input {
+          width: 270px;
+        }
+
+        .form-btn {
+          width: 270px;
+        }
+      }
+    }
+  }
+}
